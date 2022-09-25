@@ -1,0 +1,117 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+    <p><a href="#" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline">Settings</a></p>
+  </div>
+  <div class="govuk-grid-column-one-half govuk-!-text-align-centre">
+    <h1 class="govuk-heading-m">Weather app</h1>
+  </div>
+  <div class="govuk-grid-column-one-quarter govuk-!-text-align-right">
+    <p><a href="#" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline">Edit</a></p>
+  </div>
+</div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label govuk-visually-hidden" for="place-search">
+      Search & save your places
+    </label>
+    <input class="govuk-input mo-input" id="place-search" name="place-search" type="text" placeholder="🔎 Search & save your places">
+  </div>
+
+  <div class="mo-block govuk-!-padding-right-0">
+  
+  <h2 class="govuk-heading-m">
+    Sketty (Swansea)
+  </h2>
+
+  <div class="mo-table-container">
+  <table class="govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header govuk-!-text-align-centre">1&nbsp;PM</th>
+        <th scope="col" class="govuk-table__header govuk-!-text-align-centre">2&nbsp;PM</th>
+        <th scope="col" class="govuk-table__header govuk-!-text-align-centre">3&nbsp;PM</th>
+        <th scope="col" class="govuk-table__header govuk-!-text-align-centre">4&nbsp;PM</th>
+        <th scope="col" class="govuk-table__header govuk-!-text-align-centre">5&nbsp;PM</th>
+        <th scope="col" class="govuk-table__header govuk-!-text-align-centre">6&nbsp;PM</th>
+        <th scope="col" class="govuk-table__header govuk-!-text-align-centre">7&nbsp;PM</th>
+        <th scope="col" class="govuk-table__header govuk-!-text-align-centre">8&nbsp;PM</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell govuk-!-text-align-centre"><img src="/public/images/mo-cloud.png" alt="Cloudy"></td>
+        <td class="govuk-table__cell govuk-!-text-align-centre"><img src="/public/images/mo-cloud.png" alt="Cloudy"></td>
+        <td class="govuk-table__cell govuk-!-text-align-centre"><img src="/public/images/mo-cloud.png" alt="Cloudy"></td>
+        <td class="govuk-table__cell govuk-!-text-align-centre"><img src="/public/images/mo-cloud.png" alt="Cloudy"></td>
+        <td class="govuk-table__cell govuk-!-text-align-centre"><img src="/public/images/mo-cloud.png" alt="Cloudy"></td>
+        <td class="govuk-table__cell govuk-!-text-align-centre"><img src="/public/images/mo-cloud.png" alt="Cloudy"></td>
+        <td class="govuk-table__cell govuk-!-text-align-centre"><img src="/public/images/mo-cloud.png" alt="Cloudy"></td>
+        <td class="govuk-table__cell govuk-!-text-align-centre"><img src="/public/images/mo-cloud.png" alt="Cloudy"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;5%</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;5%</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;5%</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;5%</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;5%</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;5%</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;5%</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;5%</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;14°</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;14°</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;15°</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;16°</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;16°</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;14°</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;12°</td>
+        <td class="govuk-table__cell govuk-!-text-align-centre">&lt;12°</td>
+
+
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <a href="#" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline">View full forecast</a>
+
+</div>
+
+<div class="mo-block">
+  
+  <h2 class="govuk-heading-m">
+    UK video forecast
+  </h2>
+
+  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/Ehj4bGnlz_w' frameborder='0' allowfullscreen></iframe></div>
+  <!-- https://embedresponsively.com/ -->
+
+</div>
+
+<img src="/public/images/mo-advert.png" alt="Cloudy">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third govuk-!-text-align-centre">
+    <a href="#" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline govuk-body-s">Weather</a>
+  </div>
+  <div class="govuk-grid-column-one-third govuk-!-text-align-centre">
+    <a href="#" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline govuk-body-s">Maps</a>
+  </div>
+  <div class="govuk-grid-column-one-third govuk-!-text-align-centre">
+    <a href="#" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline govuk-body-s">Warnings</a>
+  </div>
+</div>
+
+{% endblock %}
+
+

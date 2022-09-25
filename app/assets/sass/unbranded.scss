@@ -14,3 +14,57 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "application";
+
+// Custom styles
+
+.govuk-template {
+    background-color: govuk-colour("light-grey");  
+}
+
+.govuk-template__body {
+    background-color: govuk-colour("light-grey");
+}
+
+img {
+    width: 100%;
+}
+
+// Remove horizontal lines from tables
+.govuk-table__header,
+.govuk-table__cell {
+  border-bottom: none;
+}
+
+// Enable the wide forecast tables to scroll horizontally 
+.mo-table-container {
+    overflow-x: scroll;
+}
+
+// MO style container for content blocks
+.mo-block {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: govuk-spacing(3);
+    padding: govuk-spacing(3);
+}
+
+// make the search input look like the app
+.mo-input {
+    border: none;
+    border-radius: 5px;
+    padding: govuk-spacing(3) govuk-spacing(2);
+}
+
+// Overide the media query on columns so they don't go full width on mobile 
+.govuk-grid-column-one-quarter {
+    width: 25%;
+    float: left;
+}
+.govuk-grid-column-one-third {
+    width: 33.3333%;
+    float: left;
+}
+.govuk-grid-column-one-half {
+    width: 50%;
+    float: left;
+}
