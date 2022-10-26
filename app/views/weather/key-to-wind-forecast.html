@@ -1,0 +1,35 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <p><a href="/weather/" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline">Close</a></p>
+  </div>
+</div>
+
+<hr>
+
+<h2 class="govuk-heading-l">
+  Key to wind forecast
+</h2>
+
+<div>
+  <h3 class="govuk-heading-s">Compass direction</h3>
+  <p>The arrow shows the direction that the wind is blowing in. For example, an arrow pointing up shows a wind blowing from the south to the north.</p>
+  <h4 class="govuk-heading-s">Average wind speed</h4>
+  <p>Wind speed strengthens and weakens over time. This number represents the average wind speed expected for this time.</p>
+  <h4 class="govuk-heading-s">Wind gusts</h4>
+  <p>Wind gusts show how strong the wind speed could get at any point during this time.</p>
+  <h4 class="govuk-heading-s">Wind direction</h4>
+  <p>The letter represents the direction that the wind is blowing from. For example, The letter S indicates that it is a wind that comes from the south.</p>
+</div>
+
+
+{% endblock %}
+
+
